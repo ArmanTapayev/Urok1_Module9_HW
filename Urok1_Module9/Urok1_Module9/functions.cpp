@@ -32,13 +32,15 @@ void task1(int *arr, int *row, int *col, int *vecColMax, int *vecRowMax)
 	/* ищем максимальный элемент в строке */
 	for (int i = 0; i < *row; i++)
 	{
-		int k = 0;
+		int l = 0;
 		for (int j = 0; j < *col; j++)
 		{
-			*(vectRow + k) = *(arr + i * *row + j);
-			k++;
+			*(vectRow + j) = *(arr + i * *row + j);
+			l++;
 		}
-		*(vecRowMax + i) = maxArray(vectRow, row); // записываем наибольший элемент
+		//printArray(vectRow, &stub, col);
+
+		*(vecRowMax + i) = maxArray(vectRow, col); // записываем наибольший элемент
 	}
 	printf("Массив наибольших элементов в строке:\n");
 	printArray(vecRowMax, &stub, row);
