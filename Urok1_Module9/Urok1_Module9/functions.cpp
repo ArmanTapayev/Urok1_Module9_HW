@@ -14,7 +14,7 @@ void task1(int *arr, int *row, int *col, int *vecColMax, int *vecRowMax)
 
 	int stub = 1; // stub - заглушка
 
-				  /* ищем максимальный элемент в столбце */
+	/* ищем максимальный элемент в столбце */
 	for (int j = 0; j < *col; j++)
 	{
 		int k = 0;
