@@ -32,11 +32,11 @@ void task1(int *arr, int *row, int *col, int *vecColMax, int *vecRowMax)
 	/* ищем максимальный элемент в строке */
 	for (int i = 0; i < *row; i++)
 	{
-		int l = 0;
+		//int l = 0;
 		for (int j = 0; j < *col; j++)
 		{
 			*(vectRow + j) = *(arr + i * *row + j);
-			l++;
+			//l++;
 		}
 		//printArray(vectRow, &stub, col);
 
