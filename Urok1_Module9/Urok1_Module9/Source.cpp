@@ -39,6 +39,10 @@ void main()
 			vecRowMax = GetMemoryVect(&row); // rows
 
 			task1(arr, &row, &col, vecColMax, vecRowMax);
+			
+			free(arr);
+			free(vecColMax);
+			free(vecRowMax);
 
 			system("pause");
 			system("cls");
@@ -69,6 +73,10 @@ void main()
 			vecRowLastEven = GetMemoryVect(&row); // rows
 
 			task2(arr, &row, &col, vecColFirstEven, vecRowLastEven);
+			
+			free(arr);
+			free(vecColFirstEven);
+			free(vecRowLastEven);
 
 			system("pause");
 			system("cls");
@@ -140,6 +148,10 @@ void main()
 			}
 			printf("Массив, состоящий из суммы элементов меньших числа %d:\n", Number);
 			printArray(vecRow, &stub, &k);
+			
+			free(arr);
+			free(vectCol);
+			free(vecRow);
 
 			system("pause");
 			system("cls");
@@ -211,6 +223,10 @@ void main()
 			printArray(vectPos, &stub, &k);
 			printf("Отрицательные элементы массива: \n");
 			printArray(vectNeg, &stub, &l);
+			
+			free(arr);
+			free(vectPos);
+			free(vectNeg);
 
 			system("pause");
 			system("cls");
@@ -249,6 +265,8 @@ void main()
 					sum += *(arr + i);
 			}
 			printf("Сумма четных элементов массива: %d\n", sum);
+			
+			free(arr);
 
 			system("pause");
 			system("cls");
@@ -279,6 +297,8 @@ void main()
 					count++;
 			}
 			printf("Количество отрицательных элементов массива: %d\n", count);
+			
+			free(arr);
 
 			system("pause");
 			system("cls");
@@ -309,6 +329,9 @@ void main()
 			}
 
 			printf("Произведение элементов, модуль которых меньше 7: %3.2lf\n", mult);
+			
+			free(arr);
+			
 			system("pause");
 			system("cls");
 		}
@@ -341,6 +364,8 @@ void main()
 
 			printArray(arr, &stub, &N);
 			printf("Наибольший элемент массива %3.2lf\n", maxArray(arr, &N));
+			
+			free(arr);
 
 			system("pause");
 			system("cls");
@@ -365,6 +390,8 @@ void main()
 			printArray(arr, &stub, &N);
 
 			printf("Минимальный элемент массива: %d\n", minArray(arr, &N));
+			
+			free(arr);
 
 			system("pause");
 			system("cls");
@@ -400,6 +427,8 @@ void main()
 
 			printArray(arr, &stub, &N);
 			printf("Cреднее арифметическое элементов массива %3.2lf\n", averArray(arr, &N));
+			
+			free(arr);
 
 			system("pause");
 			system("cls");
@@ -482,6 +511,8 @@ void main()
 			}
 			if (!flag)
 				printf("Отрицательных элементов нет.\n");
+			
+			free(arr);
 
 			system("pause");
 			system("cls");
@@ -506,6 +537,8 @@ void main()
 			printf("Минимальный элемент массива: %3.2lf\n", minArray(arr, &N));
 			printf("Максимальный элемент массива: %3.2lf\n", maxArray(arr, &N));
 			printf("Cумма минимального и максимального элементов %3.2lf\n", maxArray(arr, &N) + minArray(arr, &N));
+			
+			free(arr);
 
 			system("pause");
 			system("cls");
@@ -542,6 +575,7 @@ void main()
 			printf("Минимальный элемент массива: %3.2lf\n", minArray(arr, &N));
 			printf("Максимальный элемент массива: %3.2lf\n", maxArray(arr, &N));
 			printf("Произведение минимального и максимального элементов %3.2lf\n", maxArray(arr, &N)*minArray(arr, &N));
+			
 			free(arr);
 
 			system("pause");
@@ -569,6 +603,8 @@ void main()
 			scanf("%d", &searchNum);
 
 			searchNumber(arr, &N, &searchNum);
+			
+			free(arr);
 
 			system("pause");
 			system("cls");
